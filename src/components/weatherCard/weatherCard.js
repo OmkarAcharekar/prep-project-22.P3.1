@@ -43,18 +43,18 @@ function WeatherCard(props) {
           Lon: {results.coord.lon}° Lat: {results.coord.lat} °
         </div>
         <div className="description">
-          &#40; Condtions in {results.name}: {results.weather[0].description},
+          &#40; Conditions in {results.name}: {results.weather[0].description},
           with <br /> temperature ranging from {results.main.temp_min}
           &nbsp;to {results.main.temp_max} ° &#41;
         </div>
         <div className="bottom-info">
           <p>
             <WiBarometer className="we-icon" />
-            <br /> Presurre: {results.main.pressure} hPa
+            <br /> Pressure: {results.main.pressure} hPa
           </p>
           <p>
             <WiHumidity className="we-icon" />
-            <br /> Humidty: {results.main.humidity}%
+            <br /> Humidity: {results.main.humidity}%
           </p>
           <p>
             <WiWindy className="we-icon" />
